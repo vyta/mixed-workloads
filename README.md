@@ -1,2 +1,2 @@
-# mixed-workloads
+# Mixed-workloads
 Helpful stuffs for mixed-workloads
