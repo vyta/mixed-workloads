@@ -1,3 +1,6 @@
+# DO NOT USE
+Currently breaks cluster and density test fails. 
+
 # update_azurecni.ps usage:
 
 Parameters:

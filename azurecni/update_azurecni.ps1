@@ -24,6 +24,7 @@ $nodes.items | Where-Object { $_.metadata.labels.'beta.kubernetes.io/os' -eq 'wi
     Move-Item C:\bin\azure-vnet-ipam.exe C:\k\azurecni\bin\ -Force
     Move-Item C:\bin\10-azure.conflist C:\k\azurecni\netconf\ -Force
     Remove-Item C:\k\azure-vnet.json -Force -ErrorAction SilentlyContinue
+    Remove-Item C:\k\azure-vnet.json.lock -Force -ErrorAction SilentlyContinue
     get-hnsnetwork | ? Name -Like "Azure" | remove-hnsnetwork
     Start-service kubelet 
   }
